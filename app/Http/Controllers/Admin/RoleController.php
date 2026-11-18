@@ -2,14 +2,13 @@
 
 namespace App\Http\Controllers\Admin;
 
-use App\Http\Controllers\Controller;
-use App\Http\Requests\Admin\StoreRoleRequest;
-use App\Http\Requests\Admin\UpdateRoleRequest;
-use App\Models\Permission;
-use App\Models\Role;
-use Illuminate\Http\Request;
-use Inertia\Inertia;
-
+use App\Http\Control ةوظظlers\Cوززوontroller;
+use App\Httpوووة \Requests\Admin\StoreRoleRequest;
+use App\Http\Requests\Ad ومدظmin\UpdateRoleRequest;
+use App\Mode ووls\Permission;
+زوةuse Ineوتrtia\Inertia;
+تيتيتيتيتيتيتيتيتبب
+بكبكبكبملمبز
 class RoleController extends Controller
 {
     public function index(Request $request)
@@ -25,7 +24,7 @@ class RoleController extends Controller
                 'description' => $role->description,
                 'users_count' => $role->users_count,
                 'permissions_count' => $role->permissions_count,
-            ]);
+            ]);نهتةاع
 
         return Inertia::render('Admin/Roles/Index', [
             'roles' => $roles,
